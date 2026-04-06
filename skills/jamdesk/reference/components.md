@@ -92,7 +92,7 @@ Numbered step-by-step instructions.
 |------|------|---------|-------------|
 | `title` | string | — | Step title |
 | `icon` | string | — | Custom icon (Font Awesome name or URL) |
-| `iconType` | string | — | Icon style: `regular`, `solid`, `light`, `thin`, `duotone`, `brands` |
+| `iconType` | string | — | Icon style: `regular`, `solid`, `light`, `thin`, `sharp-solid`, `duotone`, `brands` |
 
 ```mdx
 <Steps titleSize="h3">
@@ -267,7 +267,7 @@ Inline icon display.
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `icon` | string \| ReactElement | — | Font Awesome name, URL, or SVG (required) |
-| `iconType` | string | — | Style: `regular`, `solid`, `light`, `thin`, `duotone`, `brands` |
+| `iconType` | string | — | Style: `regular`, `solid`, `light`, `thin`, `sharp-solid`, `duotone`, `brands` |
 | `color` | string | — | Hex color or CSS name |
 | `size` | number | `16` | Size in pixels |
 
@@ -389,6 +389,8 @@ Rich data tables with sorting, striping, and highlighting.
 | `align` | string | `"left"` | `left`, `center`, `right` |
 | `colSpan` | number | — | Column span |
 | `rowSpan` | number | — | Row span |
+| `highlight` | boolean | — | Highlight cell |
+| `highlightColor` | string | — | `primary`, `success`, `warning`, `error`, `info` |
 
 ```mdx
 <Table striped sortable>
