@@ -123,11 +123,11 @@ Single path or light/dark variants:
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `light` | string | Logo shown in light mode — visible on light backgrounds (required) |
-| `dark` | string | Logo shown in dark mode — visible on dark backgrounds (optional) |
-| `href` | string | Click destination URL (optional) |
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `light` | string | — | Logo shown in light mode — visible on light backgrounds |
+| `dark` | string | — | Logo shown in dark mode — visible on dark backgrounds |
+| `href` | string | — | Click destination URL |
 
 ---
 
@@ -683,84 +683,33 @@ When `true`, all docs URLs are prefixed with `/docs/`. Requires a proxy (Cloudfl
 {
   "$schema": "https://www.jamdesk.com/docs.json",
   "name": "Acme Docs",
-  "description": "Documentation for the Acme platform",
   "theme": "jam",
-  "colors": {
-    "primary": "#635BFF",
-    "light": "#7C75FF",
-    "dark": "#4F46E5"
-  },
-  "logo": {
-    "light": "/images/logo-light.webp",
-    "dark": "/images/logo-dark.webp",
-    "href": "https://www.acme.com"
-  },
+  "colors": { "primary": "#635BFF" },
+  "logo": { "light": "/images/logo-light.webp", "dark": "/images/logo-dark.webp" },
   "favicon": "/images/favicon.png",
-  "fonts": {
-    "heading": { "family": "Inter" },
-    "body": { "family": "Inter" }
-  },
   "navbar": {
-    "links": [
-      { "label": "Blog", "href": "https://www.acme.com/blog" }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.acme.com"
-    }
+    "links": [{ "label": "Blog", "href": "https://www.acme.com/blog" }],
+    "primary": { "type": "button", "label": "Dashboard", "href": "https://dashboard.acme.com" }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/acme",
-      "github": "https://github.com/acme",
-      "discord": "https://discord.gg/acme"
-    }
+    "socials": { "x": "https://x.com/acme", "github": "https://github.com/acme" }
   },
-  "appearance": { "default": "system" },
   "tabsPosition": "left",
   "navigation": {
     "tabs": [
       {
         "tab": "Documentation",
-        "icon": "book-open",
         "groups": [
-          {
-            "group": "Getting Started",
-            "pages": ["introduction", "quickstart"]
-          },
-          {
-            "group": "Guides",
-            "pages": ["guides/authentication", "guides/webhooks"]
-          }
+          { "group": "Getting Started", "pages": ["introduction", "quickstart"] }
         ]
       },
       {
         "tab": "API Reference",
-        "icon": "code",
-        "groups": [
-          {
-            "group": "Endpoints",
-            "openapi": "openapi.yaml"
-          }
-        ]
+        "groups": [{ "group": "Endpoints", "openapi": "openapi.yaml" }]
       }
     ]
   },
-  "api": {
-    "openapi": "openapi.yaml",
-    "playground": { "display": "interactive" },
-    "examples": {
-      "languages": ["curl", "python", "javascript", "go"]
-    }
-  },
-  "chat": { "enabled": true },
-  "redirects": [
-    { "source": "/docs/old", "destination": "/guides/new", "permanent": true }
-  ],
-  "integrations": {
-    "ga4": { "measurementId": "G-XXXXXXXXXX" },
-    "plausible": { "domain": "docs.acme.com" }
-  }
+  "api": { "openapi": "openapi.yaml", "playground": { "display": "interactive" } },
+  "integrations": { "plausible": { "domain": "docs.acme.com" } }
 }
 ```

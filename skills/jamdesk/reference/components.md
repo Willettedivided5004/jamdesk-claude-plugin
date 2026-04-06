@@ -573,7 +573,7 @@ Standard markdown images auto-zoom on click:
 ![Wide banner](/images/banner.png =800x)
 ```
 
-Images are automatically wrapped in a zoomable container. Click to expand.
+Images are automatically wrapped in a zoomable container. Click to expand. Wrap in `<Frame>` to disable zoom.
 
 ---
 
@@ -594,6 +594,8 @@ Framework/language switcher — persists selection across page.
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `defaultView` | string | — | Default view by title |
+
+**ViewSelector** — renders the view toggle buttons. No props — placement determines position.
 
 **ViewWrapper** — wraps content that should only appear when any view is active (hides when no view context exists).
 
@@ -640,6 +642,12 @@ Color palette display with two variants.
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `variant` | string | `"compact"` | `compact` or `table` |
+
+**Color.Row Props:**
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `title` | string | — | Row heading text |
 
 **Color.Item Props:**
 

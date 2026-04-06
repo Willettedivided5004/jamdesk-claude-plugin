@@ -67,12 +67,12 @@ All frontmatter fields:
 ### Callouts (6 Presets)
 
 ```mdx
-<Note>Informational message — use for general guidance.</Note>
+<Note>General information or guidance.</Note>
 <Info>Important detail the reader should know.</Info>
-<Warning>Caution — potential issues or gotchas.</Warning>
-<Tip>Helpful suggestion to improve workflow.</Tip>
-<Check>Success confirmation or completion message.</Check>
-<Danger>Critical warning — data loss or breaking changes.</Danger>
+<Warning>Caution — potential issues ahead.</Warning>
+<Tip>Helpful suggestion or best practice.</Tip>
+<Check>Success or completion confirmation.</Check>
+<Danger>Critical warning — data loss or breaking change.</Danger>
 ```
 
 Custom callout with icon and color:
