@@ -321,7 +321,7 @@ External links at the top of the sidebar, visible on every page:
 | `eyebrows` | string | `"section"` | Above-title label: `section` or `breadcrumbs` |
 | `latex` | boolean | `false` | Force LaTeX/MathJax rendering |
 | `typography` | boolean | `false` | Smart typography (curly quotes, em dashes) |
-| `codeblocks` | string \| object | `"system"` | Syntax theme: `system` or `dark` |
+| `codeblocks` | string \| object | `"system"` | Syntax theme: `system`, `dark`, or a Shiki theme name (e.g., `github-light`, `github-dark`) |
 | `js` | string \| array | — | Custom JavaScript file(s) relative to docs root |
 
 ---

@@ -61,6 +61,9 @@ All frontmatter fields:
 | `mode` | string | Layout: `default`, `wide`, `custom`, `frame`, `center` |
 | `openapi` | string | OpenAPI operation (e.g., `GET /users`) |
 | `asyncapi` | string | AsyncAPI operation |
+| `keywords` | string[] | SEO keywords for search indexing |
+| `noindex` | boolean | Exclude page from search engines and sitemap |
+| `tag` | string | Badge label in sidebar (e.g., `"New"`, `"Beta"`) |
 
 ## Quick Component Reference
 
@@ -251,12 +254,13 @@ Store images in the `images/` directory. Use `.webp` format when possible for sm
 
 **Formatting:**
 - **Frontmatter**: Every page needs `title`. Add `description` for SEO
-- **Headings**: H2 for major sections, H3 for subsections — never skip levels
+- **Headings**: Sentence case — capitalize first word only. H2 for major sections, H3 for subsections — never skip levels
 - **Code blocks**: Always specify language for syntax highlighting
 - **Links**: Relative paths without `.mdx` extension: `[guide](/guides/quickstart)`
-- **Images**: Store in `images/` directory. Use `.webp` format when possible
+- **Images**: Store in `images/` directory. Use `.webp` format when possible. Always include descriptive alt text
 - **Paragraphs**: Keep concise — 2-3 sentences max for readability
 - **Lists**: Use bullet lists for 3+ items. Use numbered lists only for ordered steps
+- **No emoji** in documentation content — use icons via `<Icon>` component instead
 
 ## Common Mistakes
 
