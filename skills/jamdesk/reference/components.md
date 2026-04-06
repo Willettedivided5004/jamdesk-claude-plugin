@@ -226,6 +226,7 @@ Inline status label.
 | `size` | string | `"md"` | `xs`, `sm`, `md`, `lg` |
 | `shape` | string | `"rounded"` | `rounded`, `pill` |
 | `icon` | string | — | Font Awesome icon |
+| `iconType` | string | — | Icon style: `regular`, `solid`, `light`, `thin`, `sharp-solid`, `duotone`, `brands` |
 | `stroke` | boolean | — | Outline style |
 | `disabled` | boolean | — | Disabled appearance |
 
@@ -371,6 +372,7 @@ Rich data tables with sorting, striping, and highlighting.
 | `bordered` | boolean | — | Full borders |
 | `fullWidth` | boolean | `true` | 100% width |
 | `caption` | string | — | Table caption |
+| `captionVisible` | boolean | `false` | Show caption visually (otherwise screen-reader only) |
 | `stickyHeader` | boolean | — | Sticky header on scroll |
 | `sortable` | boolean | — | Enable column sorting |
 
@@ -389,6 +391,7 @@ Rich data tables with sorting, striping, and highlighting.
 | `align` | string | `"left"` | `left`, `center`, `right` |
 | `colSpan` | number | — | Column span |
 | `rowSpan` | number | — | Row span |
+| `header` | boolean | — | Render as `<th>` header cell |
 | `highlight` | boolean | — | Highlight cell |
 | `highlightColor` | string | — | `primary`, `success`, `warning`, `error`, `info` |
 

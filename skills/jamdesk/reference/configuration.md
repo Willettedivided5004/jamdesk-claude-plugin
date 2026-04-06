@@ -574,6 +574,36 @@ When `true`, pages show last-modified date.
 
 ---
 
+## Interaction
+
+```json
+{
+  "interaction": {
+    "drilldown": true
+  }
+}
+```
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `drilldown` | boolean | — | Enable click-through navigation on groups |
+
+---
+
+## Analytics
+
+```json
+{
+  "analytics": {
+    "enabled": true
+  }
+}
+```
+
+Jamdesk's built-in analytics dashboard. Separate from third-party `integrations`.
+
+---
+
 ## Spellcheck
 
 ```json
